@@ -1,0 +1,122 @@
+:root{
+	--top-vertical:0px;
+	--left-horizontal:32px;
+	--dimensiones-grupo:70px;
+}
+
+*{
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	user-select: none;
+}
+
+body{
+	background-color: beige;	
+}
+
+#jugadoresContainer {
+  display: flex;
+	justify-content: center;
+}
+
+.jugadorContainer {
+	width: 40vw;
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: rgb(234, 233, 213);
+	border-radius: 5px;
+	margin: 10px;
+}
+
+h2{
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+img{
+	height: var(--dimensiones-grupo)
+}
+
+.cuenta{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grupo{
+	position: relative;
+	height: var(--dimensiones-grupo);
+	width: var(--dimensiones-grupo);
+	margin: 10px;
+}
+
+.fosforo1{
+	position: absolute;
+	transform: rotate(90deg);
+	top:-30px;
+	left:var(--left-horizontal);
+}
+
+.fosforo2{
+	position: absolute;
+	transform: rotate(180deg);
+	left:  65px;
+	top: var(--top-vertical)
+}
+
+.fosforo3{
+	position: absolute;
+	transform: rotate(270deg);
+	top: 32px;
+	left:var(--left-horizontal);
+}
+
+.fosforo4{
+	position: absolute;
+	left: 0px;
+	top: var(--top-vertical)
+}
+
+.fosforo5{
+	position: absolute;
+	transform: rotate(45deg);
+	left:34px;
+	top:0px
+}
+
+.botonesJugador{
+	position:fixed;
+	margin-top: auto;
+	top:50px;
+}
+
+button{
+	min-width: 60px;
+	padding: 0 10px;
+	font-size: xx-large;
+	margin: 20px 0;
+	border-radius: 5px;
+	background-color: rgb(200, 197, 193);
+}
+
+dialog{
+	font-size: larger;
+}
+
+.separador{
+	border-top: 2px solid black;
+	width: var(--dimensiones-grupo);
+	margin: 10px;
+}
+
+@media (min-width: 450px) { 
+	.separador{
+		height: var(--dimensiones-grupo);
+		width: unset;
+		border-top: unset;
+		border-left: 2px solid black;
+	}
+}
